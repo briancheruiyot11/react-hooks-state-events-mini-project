@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function NewTaskForm({ categories, onTaskFormSubmit }) {
   const [text, setText] = useState("");
-  const [category, setCategory] = useState(categories[1]); // skip "All"
+  const [category, setCategory] = useState(categories[1]);
 
   function handleSubmit(e) {
     e.preventDefault();
